@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #2c3e50;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+td {
+    background-color: #ecf0f1;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.out-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.in-btn {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* Hover effect without changing the background color */
+.out-btn:hover, .in-btn:hover {
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    opacity: 1; /* Keep the opacity the same */
+}
+
+/* Toast styling */
+.toast {
+    display: none;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.toast img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.toast button {
+    background-color: #fff;
+    color: #f44336;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Extra styles for buttons outside the table */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+
+/* Apply to <td> elements in a selected row */
+tr.selected-row td {
+    background-color: #4CAF50 !important; /* Force green background */
+    color: inherit !important; /* Retain the original text color */
+}
